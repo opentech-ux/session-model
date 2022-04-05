@@ -1,6 +1,6 @@
 {
   "name": "@opentech-ux/session-model",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Model to represent an UX session with a graph of all traversed LOMs and timed events.",
   "homepage": "https://github.com/opentech-ux/session-model#readme",
   "license": "Apache-2.0",
