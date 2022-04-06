@@ -8,23 +8,10 @@
       "ES2015",
       "DOM"
     ],
-    "module": "CommonJS",
-    "outDir": "./build/lib",
-    "resolveJsonModule": true,
-    "rootDirs": [
-      "./src",
-      "./build/json-schema"
-    ],
-    "skipLibCheck": true,
+    "module": "es2015",
+    "outDir": "./dist/lib",
+    "rootDir": "./src",
     "strict": true,
     "target": "ES2015"
-  },
-  "exclude": [
-    "./build/lib",
-    "./node_modules",
-    "./tests/**/*.test.ts"
-  ],
-  "include": [
-    "./src/**/*.ts"
-  ]
+  }
 }

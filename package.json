@@ -20,6 +20,9 @@
   "bugs": {
     "url": "https://github.com/opentech-ux/session-model/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/node": "^16.11.6",
     "@typescript-eslint/eslint-plugin": "5.3.0",
@@ -39,17 +42,16 @@
     "typescript-json-schema": "0.53.0"
   },
   "files": [
-    "build/lib/**/*",
-    "build/schema/**/*"
+    "dist/lib/**/*",
+    "dist/schema/**/*"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "main": "dist/lib/session-model.js",
+  "types": "dist/lib/session-model.d.ts",
   "scripts": {
     "build": "npm run build:clean && npm run build:ts && npm run build:schema",
-    "build:clean": "rimraf ./build",
+    "build:clean": "rimraf ./dist",
     "build:ts": "tsc -p .",
-    "build:schema": "typescript-json-schema tsconfig.json Session --id https://opentech-ux.org/schema/session.schema.json --out build/schema/session.schema.json",
+    "build:schema": "typescript-json-schema tsconfig.json Session --id https://opentech-ux.org/schema/session.schema.json --out dist/schema/session.schema.json",
     "deps:refresh": "rimraf ./node_modules ./package-lock.json && npm install",
     "eslint:format": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix",
     "pkg:create": "npm run build && npm run test",
