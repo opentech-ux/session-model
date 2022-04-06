@@ -21,4 +21,4 @@ npm install @opentech-ux/session-model
 
 ## License
 
-[APACHE 2.0](LICENSE)
+[APACHE 2.0](LICENSE.md)
