@@ -1,8 +1,9 @@
-import { AbstractEvent } from './AbstractEvent';
 import { Point } from './Point';
+import { AbstractEvent } from './AbstractEvent';
+import { Discriminated } from './Discriminated';
 
 /** A captured action event (mouse click, keystroke, drag & drop, ...). */
-export interface ActionEvent extends AbstractEvent {
+export interface ActionEvent extends AbstractEvent, Discriminated<'Action'> {
     /** ID of the LOM zone at which the event occurred. */
     readonly zoneId: string;
 

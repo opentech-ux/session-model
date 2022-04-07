@@ -1,8 +1,9 @@
 import { Point } from './Point';
 import { AbstractEvent } from './AbstractEvent';
+import { Discriminated } from './Discriminated';
 
 /** A captured exploration event (mouse move, scrolling, keyboard navigation, ...). */
-export interface ExplorationEvent extends AbstractEvent {
+export interface ExplorationEvent extends AbstractEvent, Discriminated<'Exploration'> {
     /** Scroll position of the document when this event occurred. */
     readonly scrollPosition: Point;
 

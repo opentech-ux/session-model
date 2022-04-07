@@ -1,6 +1,7 @@
 export * from './AbstractEvent';
 export * from './ActionEvent';
 export * from './Bounds';
+export * from './Discriminated';
 export * from './ExplorationEvent';
 export * from './Lom';
 export * from './Point';
