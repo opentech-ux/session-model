@@ -2,7 +2,7 @@ import { TimeStamped } from './TimeStamped';
 
 /** Base class for captured events. */
 export interface AbstractEvent extends TimeStamped {
-    /** Instant of this event capture relative to the start of the session. */
+    /** Instant of this event relative to the start of the session. */
     readonly timeStamp: number;
 
     /** Type of this event. */
