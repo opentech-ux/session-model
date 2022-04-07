@@ -2,9 +2,6 @@ import { Zone } from './Zone';
 
 /** Representation of the wireframe layout of a Web page. */
 export interface Lom {
-    /** Unique id of this LOM. */
-    readonly id: string;
-
     /** Page title to help identify the LOM. */
     readonly title?: string;
 
@@ -20,3 +17,6 @@ export interface Lom {
     /** Root zone corresponding to the HTML body element. */
     readonly root: Zone;
 }
+
+/** Alias for LOM ID. */
+export type LomId = string;

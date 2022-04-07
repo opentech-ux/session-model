@@ -1,5 +1,5 @@
 import { TimeStamped } from './TimeStamped';
-import { Lom } from './Lom';
+import { Lom, LomId } from './Lom';
 import { ActionEvent } from './ActionEvent';
 import { ExplorationEvent } from './ExplorationEvent';
 
@@ -15,7 +15,7 @@ export interface Session extends TimeStamped {
     readonly timeStamp: number;
 
     /** List of LOMs traversed during this session. */
-    readonly loms: { [k: string]: Lom };
+    readonly loms: { readonly [k: LomId]: Lom };
 
     /** List of exploration events captured in this session chunk. */
     readonly explorationEvents: ExplorationEvent[];
