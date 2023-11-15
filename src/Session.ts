@@ -35,6 +35,12 @@ export interface Session extends TimeStamped {
     /** Unique ID of the user owning this session, if available. */
     readonly userId?: string;
 
+    /** Unique ID of the origin session, if available. */
+    readonly parentId?: string;
+
+    /** Unique ID of the next session, if available. */
+    readonly nextId?: string;
+
     /** Start time of this session. */
     readonly timeStamp: number;
 
@@ -44,5 +50,5 @@ export interface Session extends TimeStamped {
     /** List of events of this session in chronological order. */
     readonly timeline: readonly TimelineElement[];
 
-    readonly performanceTiming: PerformanceTiming;
+    readonly performanceTiming?: PerformanceTiming;
 }
