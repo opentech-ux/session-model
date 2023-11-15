@@ -9,3 +9,5 @@ export * from './Session';
 export * from './TimeStamped';
 export * from './Transition';
 export * from './Zone';
+export * from './NavigationTiming';
+export * from './ResourceTiming';
