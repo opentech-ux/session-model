@@ -22,8 +22,8 @@ export interface NavigationTiming {
     readonly completeLoadingTime: number;
 
     /** Id of the lom where the triggering event was produced. */
-    readonly lomIdOrigin: string;
+    readonly fromLomId: string | null;
 
     /** Id of the lom where the loading time is analyzed. */
-    readonly lomIdEnd: string;
+    readonly toLomId: string;
 }
