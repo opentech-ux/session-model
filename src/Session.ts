@@ -18,10 +18,10 @@ export interface LomTransitionEvent extends TimeStamped, Discriminated<'Transiti
 /** Page load time measures. */
 export interface PerformanceTiming {
     /** List of page load navigation time measures. */
-    readonly navigation: NavigationTiming[];
+    readonly navigations: NavigationTiming[];
 
     /** List of page resource load time measures. */
-    readonly resource: ResourceTiming[];
+    readonly resources: ResourceTiming[];
 }
 
 /** Alias for elements that can appear in the session timeline. */
