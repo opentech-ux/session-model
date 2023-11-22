@@ -1,6 +1,6 @@
 /** Measures the loading time of external resources of the pages. */
 export interface ResourceTiming {
-    /** Start time of this performance ressource timing. */
+    /** Start time of this performance resource timing. */
     readonly timeStamp: number;
 
     /** Name for the performance entry. */
